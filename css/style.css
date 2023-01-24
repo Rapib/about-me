@@ -1,0 +1,39 @@
+header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#bio1 {
+  width: 300px;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+#bio {
+  font-size: x-large;
+  font-weight: bold;
+  color:brown;
+}
+
+#job {
+  font-size: x-large;
+  font-weight: bold;
+  color:brown;
+}
+
+#edu {
+  font-size: x-large;
+  font-weight: bold;
+  color:brown;
+}
+
+#goals {
+  font-size: x-large;
+  font-weight: bold;
+  color:brown;
+}
