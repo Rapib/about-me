@@ -34,35 +34,39 @@ if (likeMovies === 'y' || likeMovies === 'yes') {
 }
 likeMovies();
 
+function Degree(){
+  let degree = prompt('Do I have a degree in film? Please answer YES or NO').toUpperCase();
 
-let degree = prompt('Do I have a degree in film? Please answer YES or NO').toUpperCase();
-
-if (degree === 'YES' || degree === 'Y') {
-  // console.log("Do I have a degree in film? " + degree);
-  alert('Yes!');
-  score++;
-} else if (degree === 'NO' || degree === 'N') {
-  // console.log("Do I have a degree in film? " + degree);
-  alert('I do have a degree in film.');
-} else {
-  // console.log("Do I have a degree in film? " + degree);
-  alert('Hi there.');
+  if (degree === 'YES' || degree === 'Y') {
+    // console.log("Do I have a degree in film? " + degree);
+    alert('Yes!');
+    score++;
+  } else if (degree === 'NO' || degree === 'N') {
+    // console.log("Do I have a degree in film? " + degree);
+    alert('I do have a degree in film.');
+  } else {
+    // console.log("Do I have a degree in film? " + degree);
+    alert('Hi there.');
+  }
 }
+Degree();
+  
+  let math = prompt('Yes or no question: Am I good at math?').toUpperCase();
+  
+  if (math === 'YES' || math === 'Y') {
+    // console.log("Am I good at math? " + math);
+    alert('It\'s ok!');
+    score++;
+  } else if (math === 'NO' || math === 'N') {
+    // console.log("Am I good at math? " + math);
+    alert('no.');
+  } else {
+    // console.log("Am I good at math? " + math);
+    alert('-_-');
+ } 
 
-let math = prompt('Yes or no question: Am I good at math?').toUpperCase();
 
-if (math === 'YES' || math === 'Y') {
-  // console.log("Am I good at math? " + math);
-  alert('It\'s ok!');
-  score++;
-} else if (math === 'NO' || math === 'N') {
-  // console.log("Am I good at math? " + math);
-  alert('no.');
-} else {
-  // console.log("Am I good at math? " + math);
-  alert('-_-');
-}
-
+function Q4(){
 let code = prompt('Do I like to code? Please answer yes or no.').toLowerCase();
 
 if (code === 'yes' || code === 'y') {
@@ -75,7 +79,11 @@ if (code === 'yes' || code === 'y') {
 } else {
   // console.log("Do I like to code? " + code);
   alert(':>');
+ }
 }
+//Q4();
+
+
 
 let greeting = prompt('What is your name?');
 
