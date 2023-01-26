@@ -87,38 +87,41 @@ if (code === 'yes' || code === 'y') {
 Q4();
 
 
+function greeting(){
+  let greeting = prompt('What is your name?');
 
-let greeting = prompt('What is your name?');
-
-alert('Hi, ' + greeting + ' !');
-
-// Guess number game
-
-let guessNoAttempts = 3;
-let guessNo = prompt('Guess a number between 1 to 10.');
-if (guessNo === 3) {
-  score++;
-  alert('correct');
-} else {
-  while (guessNo !== '3' && guessNoAttempts > 0) {
-
-    console.log('not 3');
-    if (guessNo < 3 && guessNo > 0) {
-      console.log('too low');
-      alert('too low');
-    } else if (guessNo > 3 && guessNo <= 10) {
-      console.log('too high');
-      alert('too high');
-    } else {
-      console.log(guessNo);
-      alert('please enter a number between 1 to 10');
+  alert('Hi, ' + greeting + ' !');
+  
+  // Guess number game
+  
+  let guessNoAttempts = 3;
+  let guessNo = prompt('Guess a number between 1 to 10.');
+  if (guessNo === 3) {
+    score++;
+    alert('correct');
+  } else {
+    while (guessNo !== '3' && guessNoAttempts > 0) {
+  
+      console.log('not 3');
+      if (guessNo < 3 && guessNo > 0) {
+        console.log('too low');
+        alert('too low');
+      } else if (guessNo > 3 && guessNo <= 10) {
+        console.log('too high');
+        alert('too high');
+      } else {
+        console.log(guessNo);
+        alert('please enter a number between 1 to 10');
+      }
+      guessNoAttempts--;
+      alert(`You have ${guessNoAttempts + 1} attempt left!`);
+      guessNo = prompt('Guess a number between 1 to 10.');
     }
-    guessNoAttempts--;
-    alert(`You have ${guessNoAttempts + 1} attempt left!`);
-    guessNo = prompt('Guess a number between 1 to 10.');
+    alert('the answer is 3');
   }
-  alert('the answer is 3');
 }
+greeting();
+
 
 // Question 7 array
 
