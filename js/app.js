@@ -15,10 +15,10 @@ if (myName === 'yes' || myName === 'y') {
   alert('Why don\'t you type yes or no?');
   }
 }
-//myName();
+myName();
 
-
-let likeMovies = prompt('Do I like movies? Please type y or n').toLowerCase();
+function likeMovies(){
+  let likeMovies = prompt('Do I like movies? Please type y or n').toLowerCase();
 
 if (likeMovies === 'y' || likeMovies === 'yes') {
   // console.log("Do I like movies? " + likeMovies);
@@ -30,7 +30,10 @@ if (likeMovies === 'y' || likeMovies === 'yes') {
 } else {
   // console.log("Do I like movies? " + likeMovies);
   alert('Is the instruction not clear?');
+ }
 }
+likeMovies();
+
 
 let degree = prompt('Do I have a degree in film? Please answer YES or NO').toUpperCase();
 
