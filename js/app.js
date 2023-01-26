@@ -1,8 +1,8 @@
 'use strict';
 let score = 0;
 
-let myName = prompt('Is my name Thomas? Please type yes or no').toLowerCase();
-
+function myName(){
+  let myName = prompt('Is my name Thomas? Please type yes or no').toLowerCase();
 if (myName === 'yes' || myName === 'y') {
   // console.log("Is my name Thomas? "+ myName);
   alert('Correct!');
@@ -13,9 +13,12 @@ if (myName === 'yes' || myName === 'y') {
 } else {
   // console.log("Is my name Thomas? "+ myName);
   alert('Why don\'t you type yes or no?');
+  }
 }
+myName();
 
-let likeMovies = prompt('Do I like movies? Please type y or n').toLowerCase();
+function likeMovies(){
+  let likeMovies = prompt('Do I like movies? Please type y or n').toLowerCase();
 
 if (likeMovies === 'y' || likeMovies === 'yes') {
   // console.log("Do I like movies? " + likeMovies);
@@ -27,36 +30,46 @@ if (likeMovies === 'y' || likeMovies === 'yes') {
 } else {
   // console.log("Do I like movies? " + likeMovies);
   alert('Is the instruction not clear?');
+ }
 }
+likeMovies();
 
-let degree = prompt('Do I have a degree in film? Please answer YES or NO').toUpperCase();
+function Degree(){
+  let degree = prompt('Do I have a degree in film? Please answer YES or NO').toUpperCase();
 
-if (degree === 'YES' || degree === 'Y') {
-  // console.log("Do I have a degree in film? " + degree);
-  alert('Yes!');
-  score++;
-} else if (degree === 'NO' || degree === 'N') {
-  // console.log("Do I have a degree in film? " + degree);
-  alert('I do have a degree in film.');
-} else {
-  // console.log("Do I have a degree in film? " + degree);
-  alert('Hi there.');
+  if (degree === 'YES' || degree === 'Y') {
+    // console.log("Do I have a degree in film? " + degree);
+    alert('Yes!');
+    score++;
+  } else if (degree === 'NO' || degree === 'N') {
+    // console.log("Do I have a degree in film? " + degree);
+    alert('I do have a degree in film.');
+  } else {
+    // console.log("Do I have a degree in film? " + degree);
+    alert('Hi there.');
+  }
 }
-
-let math = prompt('Yes or no question: Am I good at math?').toUpperCase();
-
-if (math === 'YES' || math === 'Y') {
-  // console.log("Am I good at math? " + math);
-  alert('It\'s ok!');
-  score++;
-} else if (math === 'NO' || math === 'N') {
-  // console.log("Am I good at math? " + math);
-  alert('no.');
-} else {
-  // console.log("Am I good at math? " + math);
-  alert('-_-');
+Degree();
+ 
+function math(){
+  let math = prompt('Yes or no question: Am I good at math?').toUpperCase();
+  
+  if (math === 'YES' || math === 'Y') {
+    // console.log("Am I good at math? " + math);
+    alert('It\'s ok!');
+    score++;
+  } else if (math === 'NO' || math === 'N') {
+    // console.log("Am I good at math? " + math);
+    alert('no.');
+  } else {
+    // console.log("Am I good at math? " + math);
+    alert('-_-');
+ } 
 }
+math();
+  
 
+function Q4(){
 let code = prompt('Do I like to code? Please answer yes or no.').toLowerCase();
 
 if (code === 'yes' || code === 'y') {
@@ -69,43 +82,52 @@ if (code === 'yes' || code === 'y') {
 } else {
   // console.log("Do I like to code? " + code);
   alert(':>');
+ }
 }
+Q4();
 
-let greeting = prompt('What is your name?');
 
-alert('Hi, ' + greeting + ' !');
+function greeting(){
+  let greeting = prompt('What is your name?');
 
-// Guess number game
-
-let guessNoAttempts = 3;
-let guessNo = prompt('Guess a number between 1 to 10.');
-if (guessNo === 3) {
-  score++;
-  alert('correct');
-} else {
-  while (guessNo !== '3' && guessNoAttempts > 0) {
-
-    console.log('not 3');
-    if (guessNo < 3 && guessNo > 0) {
-      console.log('too low');
-      alert('too low');
-    } else if (guessNo > 3 && guessNo <= 10) {
-      console.log('too high');
-      alert('too high');
-    } else {
-      console.log(guessNo);
-      alert('please enter a number between 1 to 10');
+  alert('Hi, ' + greeting + ' !');
+  
+  // Guess number game
+  
+  let guessNoAttempts = 3;
+  let guessNo = prompt('Guess a number between 1 to 10.');
+  if (guessNo === 3) {
+    score++;
+    alert('correct');
+  } else {
+    while (guessNo !== '3' && guessNoAttempts > 0) {
+  
+      console.log('not 3');
+      if (guessNo < 3 && guessNo > 0) {
+        console.log('too low');
+        alert('too low');
+      } else if (guessNo > 3 && guessNo <= 10) {
+        console.log('too high');
+        alert('too high');
+      } else {
+        console.log(guessNo);
+        alert('please enter a number between 1 to 10');
+      }
+      guessNoAttempts--;
+      alert(`You have ${guessNoAttempts + 1} attempt left!`);
+      guessNo = prompt('Guess a number between 1 to 10.');
     }
-    guessNoAttempts--;
-    alert(`You have ${guessNoAttempts + 1} attempt left!`);
-    guessNo = prompt('Guess a number between 1 to 10.');
+    alert('the answer is 3');
   }
-  alert('the answer is 3');
 }
+greeting();
+
 
 // Question 7 array
 
-let color = ['green', 'orange', 'red', 'blue'];
+function color(){
+
+  let color = ['green', 'orange', 'red', 'blue'];
 let guessColor = prompt('What color do I like?');
 let guessColorAttempts = 6;
 let userCorrect = false;
@@ -129,10 +151,10 @@ while (guessColorAttempts) {
     alert("sorry, guess again");
     guessColor = prompt('What color do I like?');
   }
-
-}
 alert(`answers can be ${color} & your final score is ${score} out of 7!`);
-
+ }
+}
+color();
 
 
 
