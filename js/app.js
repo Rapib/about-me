@@ -131,7 +131,7 @@ while (guessColorAttempts) {
   }
 
 }
-alert(`answers can be ${color} & your final score is ${score}!`);
+alert(`answers can be ${color} & your final score is ${score} out of 7!`);
 
 
 

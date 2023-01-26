@@ -39,6 +39,12 @@ h1 {
   color:brown;
 }
 
-* {
-  padding-left: 200px;
+ul {
+  list-style-type: circle;
+  padding-left: 50px;
+}
+
+ol {
+  list-style-type:decimal;
+  padding-left: 50px;
 }
