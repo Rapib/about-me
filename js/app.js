@@ -50,7 +50,8 @@ function Degree(){
   }
 }
 Degree();
-  
+ 
+function math(){
   let math = prompt('Yes or no question: Am I good at math?').toUpperCase();
   
   if (math === 'YES' || math === 'Y') {
@@ -64,7 +65,9 @@ Degree();
     // console.log("Am I good at math? " + math);
     alert('-_-');
  } 
-
+}
+math();
+  
 
 function Q4(){
 let code = prompt('Do I like to code? Please answer yes or no.').toLowerCase();
