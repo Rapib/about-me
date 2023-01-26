@@ -125,7 +125,9 @@ greeting();
 
 // Question 7 array
 
-let color = ['green', 'orange', 'red', 'blue'];
+function color(){
+
+  let color = ['green', 'orange', 'red', 'blue'];
 let guessColor = prompt('What color do I like?');
 let guessColorAttempts = 6;
 let userCorrect = false;
@@ -149,10 +151,10 @@ while (guessColorAttempts) {
     alert("sorry, guess again");
     guessColor = prompt('What color do I like?');
   }
-
-}
 alert(`answers can be ${color} & your final score is ${score} out of 7!`);
-
+ }
+}
+color();
 
 
 
