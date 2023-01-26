@@ -62,4 +62,42 @@ margin-left: auto;
 margin-right: auto;
 
 with both set to auto, it will split margin into half
+````
+
+1/26: 
+Driver: Mohammed Abubakar
+Navigator: Thomas Lau
+
+learned:
+
+```
+on github top right create a FORK,
+then copy the html from CODE
+use `git clone LINK` to download
+after changes and ACP 
+send a git pull request , wait for it to be approved and merged <= owner will now see the changes
+
+(if someone send you a pull request, u can approved the merge and then update your local commit to latest by doing the following)
+then you can update your local files with terminal command: git pull (while you are in your folder)
+```
+
+
+
+-the following can turn string number into number:
+
+parseInt(variable / 'number' / prompt())
++prompt()
+
+- default value (needs to be at the end) in function:
+
+```
+function xx (value1, value2 ="default value"){
+
+console.log(`Hi ${value1} and ${value2});
+
+}
+
+xx(abc);
+
+will shows 'Hi abc default value'
 ```
