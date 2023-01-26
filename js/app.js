@@ -1,8 +1,8 @@
 'use strict';
 let score = 0;
 
-let myName = prompt('Is my name Thomas? Please type yes or no').toLowerCase();
-
+function myName(){
+  let myName = prompt('Is my name Thomas? Please type yes or no').toLowerCase();
 if (myName === 'yes' || myName === 'y') {
   // console.log("Is my name Thomas? "+ myName);
   alert('Correct!');
@@ -13,7 +13,10 @@ if (myName === 'yes' || myName === 'y') {
 } else {
   // console.log("Is my name Thomas? "+ myName);
   alert('Why don\'t you type yes or no?');
+  }
 }
+//myName();
+
 
 let likeMovies = prompt('Do I like movies? Please type y or n').toLowerCase();
 
