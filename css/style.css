@@ -38,3 +38,7 @@ h1 {
   font-weight: bold;
   color:brown;
 }
+
+* {
+  padding-left: 200px;
+}
