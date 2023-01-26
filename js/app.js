@@ -125,7 +125,7 @@ while (guessColorAttempts) {
     userCorrect = false;
     alert("correct");
     break;
-  } else {
+  } else if (guessColorAttempts > 0) {
     alert("sorry, guess again");
     guessColor = prompt('What color do I like?');
   }
