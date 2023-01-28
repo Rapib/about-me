@@ -19,6 +19,9 @@ lab2
 lab3
 ![Lighthouse-lab3](img/light3.png)
 
+lab5
+![Lighthouse-lab3](img/light5.png)
+
 ### Reflections and Comments
 
 1/24: 

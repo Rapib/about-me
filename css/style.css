@@ -1,42 +1,60 @@
-header {
-  text-align: center;
-  padding-bottom: 20px;
+* {
+  box-sizing: border-box;
 }
 
-#bio1 {
+.box {
   display: inline-block;
-  width: 300px;
+  width: 80%;
+  margin: 5px;
+  border-width: 3px;
+  border-style: double;
+  border-color: brown;
+  margin-left: 10%;
+  padding: 10px 10px;
 }
+
+
+
 
 h1 {
   font-size: xx-large;
   font-family: Arial, Helvetica, sans-serif;
   color: darkgreen;
   font-weight: bold;
+  text-align: center;
+  stroke: cadetblue;
+  stroke-width: 3px;
 }
 
 #bio {
   font-size: x-large;
   font-weight: bold;
-  color:brown;
+  color: brown;
+
 }
 
 #job {
   font-size: x-large;
   font-weight: bold;
-  color:brown;
+  color: brown;
 }
 
 #edu {
   font-size: x-large;
   font-weight: bold;
-  color:brown;
+  color: brown;
 }
 
 #goals {
   font-size: x-large;
   font-weight: bold;
-  color:brown;
+  color: brown;
+}
+
+#top10 {
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(11, 67, 132);
 }
 
 ul {
@@ -45,6 +63,12 @@ ul {
 }
 
 ol {
-  list-style-type:decimal;
+  list-style-type: decimal;
   padding-left: 50px;
+}
+
+#by {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
