@@ -77,32 +77,29 @@ alert('Hi, ' + greeting + ' !');
 
 
 function guessNum() {
-  let guessNoAttempts = 3;
-  let guessNo = +prompt('Guess a number between 1 to 10.');
-  if (guessNo === 3) {
-    score++;
-    alert('correct');
-  } else {
-    while (guessNo !== '3' && guessNoAttempts > 0) {
+  let guessNoAttempts = 4;
+  while (guessNoAttempts > 0) {
 
-      console.log('not 3');
-      if (guessNo < 3 && guessNo > 0) {
-        console.log('too low');
-        alert('too low');
-      } else if (guessNo > 3 && guessNo <= 10) {
-        console.log('too high');
-        alert('too high');
-      } else {
-        console.log(guessNo);
-        alert('please enter a number between 1 to 10');
-      }
-      guessNoAttempts--;
-      alert(`You have ${guessNoAttempts + 1} attempt left!`);
-      guessNo = prompt('Guess a number between 1 to 10.');
+    let guessNo = +prompt('Guess a number between 1 to 10.');
+
+    if (guessNo < 3 && guessNo > 0) {
+
+      alert('too low');
+    } else if (guessNo > 3 && guessNo <= 10) {
+      alert('too high');
+    } else if (guessNo === 3) {
+      alert('correct');
+      score++;
+      break;
+    } else {
+      alert('please enter a number between 1 to 10');
     }
-    alert('the answer is 3');
+    guessNoAttempts--;
+    alert(`You have ${guessNoAttempts} attempt left!`);
   }
+  alert('the answer is 3');
 }
+
 guessNum();
 
 
